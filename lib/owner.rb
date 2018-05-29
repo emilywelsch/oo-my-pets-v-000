@@ -1,17 +1,17 @@
 class Owner
   attr_accessor :name, :pets
   attr_reader :species
-  @@all = [] #keeps track of all the owners
+  @@all = []
 
-  def self.count #number of owners
+  def self.count 
     @@all.count
   end
 
-  def self.reset_all #reset owner array
+  def self.reset_all 
     @@all.clear
   end
 
-  def self.all #recall array of owners
+  def self.all
     @@all
   end
 
