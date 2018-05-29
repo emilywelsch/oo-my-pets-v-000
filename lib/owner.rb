@@ -3,11 +3,11 @@ class Owner
   attr_reader :species
   @@all = []
 
-  def self.count 
+  def self.count
     @@all.count
   end
 
-  def self.reset_all 
+  def self.reset_all
     @@all.clear
   end
 
@@ -39,7 +39,7 @@ class Owner
 
     def walk_dogs
       pets[:dogs].each {|dog| dog.mood = "happy"}
-      end
+      
     end
 
     def play_with_cats
